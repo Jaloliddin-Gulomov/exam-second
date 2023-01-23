@@ -1,0 +1,44 @@
+.contact{
+    margin: 0px 100px;
+}
+.contact__cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+}
+.contact__left__card{
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+table{
+    background: #F9F9FB;
+    border-radius: 5px;
+    padding: 0px 48px;
+    max-width: 794px;
+}
+.contact__left{
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+td{
+    padding-top: 32px;
+}
+@media only screen and (max-width: 768px){
+    .contact{
+        margin: 0px 39px;
+    }
+    .contact__cards{
+        flex-direction: column;
+        gap: 64px;
+    }
+    table{
+        padding: 0px 28px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .contact{
+        margin: 0px 15px;
+    }
+}

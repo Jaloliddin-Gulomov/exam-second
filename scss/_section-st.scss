@@ -1,0 +1,213 @@
+.section__st{
+    display: grid;
+    grid-template-columns: 1fr 600px;
+    grid-template-rows: 1fr;
+    gap: 130px;
+    position: relative;
+}
+.section__st-text{
+    margin: 190px 0px 0px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.h1__text{
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 125%;
+    color: #363738;
+}
+.section__st-text > p{
+    margin-right: 85px;
+}
+.small__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #6B6B6C;
+    font-family: 'PT Sans', sans-serif;
+}
+.link{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #363738;
+    font-family: 'PT Sans', sans-serif;
+    text-decoration: none;
+    .hr{
+        border: 3px solid #FFCE50;
+        max-width: 104px;
+    }
+}
+.box__parent{
+    position: relative;
+}
+.green__box{
+    height: 787px;
+    background-color: #0B7572;
+}
+.box__img-st{
+    position: absolute;
+    right: 100px;
+    top: 109px;
+    max-width: 635px;
+    height: 505px;
+}
+.box__img{
+    display: none;
+}
+.st__cards{
+    max-width: 1240px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    padding: 40px 0px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 100px;
+    top: 681px;
+}
+.st__card{
+    display: flex;
+}
+.card__text{
+    padding: 0px 105px 0px 80px;
+}
+
+.h3__text{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 135%;
+    color: #363738;
+}
+.cards__hr{
+    border: 1px solid #D7D7DD;
+}
+
+
+@media only screen and (max-width: 768px){
+    .h1__text{
+        font-size: 44px;
+    }
+    .section__st{
+        grid-template-columns: 1fr 177px;
+        gap: 29px;
+        margin-left: 39px;
+    }
+    .section__st-text > p{
+        margin: 0px;
+    }
+    .green__box{
+        height: 743px;
+    }
+    .box__img-st{
+        display: none;
+    }
+    .box__img{
+        position: absolute;
+        display: block;
+        max-width: 690px;
+        height: 314px;
+        top: 429px;
+        right: 0px;
+        margin: 0px 39px;
+    }
+    .section__st-text{
+        margin: 80px 0px 0px 0px;
+    }
+    .st__cards{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 16px;
+        top: 768px;
+        box-shadow: none;
+        left: 0px;
+        right: 39px;
+    }
+    .st__card{
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+        border-radius: 20px;
+        padding: 32px;
+    }
+    .card__text{
+        display: flex;
+        gap: 32px;
+        padding: 0px;
+    }
+    .cards__hr{
+        display: none;
+    }
+}
+@media only screen and (max-width: 644px){
+    .section__st-text{
+        gap: 10px;
+    }
+    .small__text{
+        font-size: 15px;
+    }
+    .h1__text{
+        font-size: 28px;
+    }
+    .box__img{
+        max-width: 445px;
+        height: 253px;
+        top: 490px;
+    }
+   
+}
+@media only screen and (max-width: 460px){
+    .section__st{
+        background-color: #0B7572;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin: 0px;
+    }
+    .section__st-text{
+        margin: 75px 16px 0px 16px;
+        gap: 32px;
+    }
+    .h1__text{
+        color: #FFFFFF;
+    }
+    .section__st-text > p{
+        color: #FFFFFF;
+    }
+    .link{
+        color: #FFFFFF;
+        font-size: 15px;
+    }
+    .box__img{
+        max-width: 345px;
+        height: 253px;
+        top: 40px;
+        margin: 0px 15px;
+    }
+    .st__cards{
+        left: 15px;
+        right: 15px;
+        top: 735px;
+        padding: 0px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    }
+    .st__card{
+        padding: 24px 0px 0px 32px;
+        box-shadow: none;
+    }
+    .card__text > div > p{
+        color:#363738;
+        margin-top: 12px;
+    }
+    .card__text{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .card__text > img{
+        max-width: 68px;
+    }
+    .green__box{
+        height: 500px;
+    }
+    
+}

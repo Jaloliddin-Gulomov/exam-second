@@ -1,0 +1,44 @@
+.client{
+    display: flex;
+    background-color: #0B7572;
+    padding: 85px 67px;
+    justify-content: space-between;
+    margin: 0px 100px;
+    gap: 48px;
+}
+.table{
+    display: none;
+}
+.client > h2{
+    color: #ffff;
+}
+.big__table{
+    max-width: 695px;
+}
+@media only screen and (max-width: 1270px){
+    .client{
+        margin: 0px 0px;
+        flex-direction: column;
+        padding: 64px 39px;
+    }
+}
+@media only screen and (max-width:768px){
+    .client{
+        margin-top: 172px;
+    }
+    h2{
+        font-size: 44px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .client{
+        margin-top: 76px;
+        padding: 32px 15px;
+    }
+    .big__table{
+        display: none;
+    }
+    .table{
+        display: block;
+    }
+}

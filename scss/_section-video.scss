@@ -1,0 +1,29 @@
+.video{
+    margin: 60px 100px;
+}
+.video > p{
+    max-width: 848px;
+    margin: 32px 0px;
+}
+.video > video{
+    height: 621px;
+    max-width: 1240px;
+}
+@media only screen and (max-width: 768px){
+    .video{
+        margin: 60px 39px;
+    }
+    .video > video{
+        height: 433px;
+        max-width: 690px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .video{
+        margin: 40px 15px;
+    }
+    .video > video{
+        height: 340px;
+        max-width: 345px;
+    }
+}

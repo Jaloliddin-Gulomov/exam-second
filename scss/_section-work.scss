@@ -1,0 +1,96 @@
+.work{  
+    margin: 300px 0px 100px 100px;
+    gap: 140px;
+}
+
+.work__control{
+    display: flex;
+    gap: 140px
+}
+.work__control > form{
+    max-width: 687px;
+}
+.form__cards{
+    display: flex;
+    flex-direction: column;
+    height: 560px;
+    gap: 16px;
+}
+.h2__text{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 125%;
+    color: #363738;
+}
+.radio__input{
+    padding: 40px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+}
+.radio__input:hover{
+    border: 1px solid #0B7572;
+}
+.work__control > form > p{
+    margin: 40px 0px;
+}
+.radio__input > p{
+    margin-top: 24px;
+}
+.h4__text{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: #363738;
+}
+.work__left{
+    margin-top: 120px;
+}
+.work__left > h2{
+    font-size: 54px;
+    line-height: 150%;
+    color: #363738;
+}
+.yellow__hr{
+    border: 3px solid #FFCE50;
+}
+
+
+
+
+@media only screen and (max-width:1070px){
+    .work{
+        margin-top: 400px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .work{
+        margin: 653px 0px 88px 39px;
+    }
+    .work__left{
+        display: none;
+    }
+    .h2__text{
+        font-size: 44px;
+    }
+}
+@media only screen and (max-width:460px){
+    .radio__input > p{
+        margin-top: 16px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .work{
+        margin: 577px 0px 0px 15px;
+    }
+    .h2__text{
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    form > .small__text{
+        display: none;
+    }
+    .radio__input{
+        padding: 28px 16px;
+    }
+}
